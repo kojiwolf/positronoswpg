@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ProtonOS - Create an Account</title>
+
+    <style>
+        body {
+            background-color: rgb(0, 0, 32);
+            color: white;
+            font-family: sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        /* Container for centering and size */
+        .form-container {
+            width: 25%;
+            height: 30%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            border-radius: 8px;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        input[type="text"], input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border-radius: 5px;
+            background-color: transparent;
+            color: white;
+            font-size: 16px;
+            border: 2px solid transparent;
+            background-clip: padding-box;
+        }
+
+        input[type="text"]::placeholder, input[type="password"]::placeholder {
+            color: #ccc;
+        }
+
+        /* Gradient border for input fields */
+        input[type="text"], input[type="password"] {
+            border: 2px solid;
+            border-image: linear-gradient(90deg, #3A068D, #ff9900) 1;
+        }
+
+        input[type="text"]:focus, input[type="password"]:focus {
+            outline: none;
+            border-image: linear-gradient(90deg, #3A068D, #ff9900) 1;
+        }
+
+        /* Submit button with default and hover gradient background */
+        input[type="submit"] {
+            padding: 10px 20px;
+            font-size: 16px;
+            color: #fff;
+            background-color: transparent;
+            border: 3px solid;
+            border-image: linear-gradient(90deg, #3A068D, #ff9900) 1;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s ease-in-out;
+        }
+
+        input[type="submit"]:hover {
+            background-image: linear-gradient(90deg, #3a068d, #ff9900); /* Gradient background on hover */
+            color: white;
+        }
+
+        .link {
+            color: #1c00bd;
+            text-decoration: none;
+            font-size: 14px;
+        }
+
+        .link:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <form action="index.html" method="post">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" placeholder="Enter your username" required>
+            
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" placeholder="Enter your password" required>
+
+            <input type="submit" value="Create a ProtonOS Account">
+            
+            <br>
+            <a class="link" href="cr-acc.html">Log into an Account</a>
+        </form>
+    </div>
+</body>
+</html>
